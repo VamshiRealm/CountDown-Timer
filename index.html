@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character set to UTF-8 for proper text encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the page is responsive on mobile devices -->
+    <title>Countdown Timer</title> <!-- The title of the webpage -->
+
+    <!-- Link to external stylesheet for the styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link to Google Fonts for 'Poppins' font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Countdown Timer</h1> <!-- Main heading of the page -->
+
+    <!-- Timer container that holds input fields and buttons -->
+    <div class="timer-container">
+        <!-- Label and input field for setting the target date and time -->
+        <label for="target-time">Set Target Date and Time:</label><br>
+        <input type="datetime-local" id="target-time">
+        
+        <!-- Label and input field for setting a label for the timer -->
+        <label for="timer-label">Add a Label to Your Timer:</label><br>
+        <input type="text" id="timer-label" placeholder="Enter timer label">
+        
+        <div>
+            <!-- Button to start the countdown timer -->
+            <button id="start-timer">Start</button>
+            <!-- Button to add another timer -->
+            <button id="add-timer">Add Another Timer</button>
+        </div>
+        
+        <!-- Container to hold multiple timers -->
+        <div id="timers"></div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
